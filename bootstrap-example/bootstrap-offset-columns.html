@@ -21,13 +21,15 @@
 
   <body>
 
-  <!--container-fluid with multiple responsive columns-->
+  <!--container-fluid with an offset column-->
         <div class="container-fluid">
           <div class="row">
             <div class="col">
-                This picture of a sloth starts out big (12 columns) at the lg breakpoint, then becomes smaller (6 columns) at the md breakpoint, then even smaller (3 cols) at the small breakpoint.
+                This picture of a sloth spans 6 columns and is offset by 3 columns. There's a 3-column wide margin to the left of the image. And because column grids are 12 columns wide, that means the column will have a 3-column margin on the right side as well.
             </div>
-            <div class="col-sm-3 col-md-6 col-lg-12">
+            </div>
+            <div class="row">
+            <div class="col-6 offset-3">
                 <img src="https://assets.answersingenesis.org/img/cms/content/contentnode/og_image/sloths-slow-on-purpose.jpg" width="100%">
             </div>
           </div>
